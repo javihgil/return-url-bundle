@@ -1,0 +1,14 @@
+services:
+    jhg_return_url.helper:
+        class: Jhg\ExtraBundle\Helper\ReturnUrlHelper
+        arguments: ["@service_container"]
+
+    jhg_return_url.twig_extension:
+        class: Jhg\ExtraBundle\Twig\ReturnUrlExtension
+        arguments: ["@jhg_return_url.return_url_helper"]
+        public: false
+        tags:
+            - { name: twig.extension }
+
+    jhg_ru:
+        alias: jhg_return_url.helper

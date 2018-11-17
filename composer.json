@@ -1,0 +1,20 @@
+{
+    "name": "javihgil/return-url-bundle",
+    "description": "Provides return url features",
+    "type": "bundle",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Jhg\\ReturnUrlBundle\\": ""
+        }
+    },
+    "require-dev": {
+        "symfony/http-foundation": "^4.1",
+        "symfony/http-kernel": "^4.1",
+        "symfony/config": "^4.1",
+        "symfony/dependency-injection": "^4.1",
+        "twig/twig": "^2.5"
+    }
+}
